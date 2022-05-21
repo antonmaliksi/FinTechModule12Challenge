@@ -4,24 +4,26 @@
 
 This analysis was completed using various Supervised Machine Learning tools and techniques. More details:
 
-Purpose:
+*Purpose*:
 * This is analysis was conducted to build a model that can identify the creditworthiness of borrowers.
 
-Data Information:
+*Data Information*:
 * A dataset of historical lending activity from peer-to-peer lending services company was used for prediction of imbalanced classes.
 
-Variables to be Predicted:
+*Variables to be Predicted*:
 * Using tools like ```value_counts()``` and ```train_test_split()``` provided a streamlined approach towards further data prediction and analysis.
 
-Stages of the Machine Learning Process:
+---
+
+## Stages of the Machine Learning Process:
 
 ### Data Preparation
 
 When beginning our analysis, we sliced the data we needed from the original DataFrame into new DataFrames that would integrate into the machine learning tools provided by SciKit Learn.
 
-![slice](url)
+![slice](https://github.com/antonmaliksi/FinTechModule12Challenge/blob/main/Readme%20Resources/slice.PNG)
 
-We then use the following code to split the data into the necessary training and testing variables:
+We then use the following code to split the data into the necessary training and testing variables: <br>
     ```python
     X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=1)
     ```
@@ -31,7 +33,7 @@ Doing so allows us to move onto the next step: Logistic Regression.
 
 Using SciKit Learn's ```LogisticRegression()``` function, we use the standard "model-fit-predict" structure to provide the following information:
 
-![OGdata](url)
+![OGdata](https://github.com/antonmaliksi/FinTechModule12Challenge/blob/main/Readme%20Resources/OGdata.PNG)
 
 ### Resampled Data using OverSampling
 
@@ -44,13 +46,13 @@ To accomplish this, we use IMBLearn's ```RandomOverSampler()``` function to fit 
     ```
 Using the same "model-fit-predict" structure used in the original prediction but with the resampled variables, we are provided the following:
 
-![REdata](url)
+![REdata](https://github.com/antonmaliksi/FinTechModule12Challenge/blob/main/Readme%20Resources/REdata.PNG)
 
 We can conduct a final visual comparison of the two models of Supervised Machine Learning Data:
 
 Original Data                        |  Resampled Data
 :----------------------------------------:|:----------------------------------------:
-![OGdata](url)  | ![REdata](url)
+![OGdata](https://github.com/antonmaliksi/FinTechModule12Challenge/blob/main/Readme%20Resources/OGdata.PNG)  | ![REdata](https://github.com/antonmaliksi/FinTechModule12Challenge/blob/main/Readme%20Resources/REdata.PNG)
 
 ## Results
 
