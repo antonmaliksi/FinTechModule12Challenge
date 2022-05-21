@@ -39,8 +39,8 @@ Using SciKit Learn's ```LogisticRegression()``` function, we use the standard "m
 
 When one class of data does not have enough data within its training set, the model will often generate skewed or "biased" predictive data towards the class with more data. To avoid this bias, we use Random Oversampling which randomly selects data instances of the minority class and adds them to the original training set to achieve a 50-50 balance between both classes.
 
-To accomplish this, we use IMBLearn's ```RandomOverSampler()``` function to fit the original data into a resampled data set:
-
+To accomplish this, we use IMBLearn's ```RandomOverSampler()``` function.
+1. Fit the original data into a resampled data set:
     ```python
     X_resampled, y_resampled = random_oversampler.fit_resample(X_train, y_train)
     ```
