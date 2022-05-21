@@ -27,7 +27,7 @@ We then use the following code to split the data into the necessary training and
     ```python
     X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=1)
     ```
-Doing so allows us to move onto the next step: Logistic Regression.
+<br>Doing so allows us to move onto the next step: Logistic Regression.
 
 ### Logistic Regression
 
@@ -44,6 +44,7 @@ To accomplish this, we use IMBLearn's ```RandomOverSampler()``` function to fit 
     ```python
     X_resampled, y_resampled = random_oversampler.fit_resample(X_train, y_train)
     ```
+    
 Using the same "model-fit-predict" structure used in the original prediction but with the resampled variables, we are provided the following:
 
 ![REdata](https://github.com/antonmaliksi/FinTechModule12Challenge/blob/main/Readme%20Resources/REdata.PNG)
@@ -56,15 +57,15 @@ Original Data                        |  Resampled Data
 
 ## Results
 
-Machine Learning Model 1 (Original Data):
-* Accuracy: 95%
-* Precision: 99%
-* Recall: 99%
+**Machine Learning Model 1 (Original Data)**:
+* *Accuracy*: 95%
+* *Precision*: 99%
+* *Recall*: 99%
 
-Machine Learning Model 2 (Resampled Data):
-* Accuracy: 99%
-* Precision: 99%
-* Recall: 99%
+**Machine Learning Model 2 (Resampled Data)**:
+* *Accuracy*: 99%
+* *Precision*: 99%
+* *Recall*: 99%
 
 ## Summary
 When referencing the pure empirical data of both Machine Learning Models, it's evident that Model 2 (Resampled Data) had higher accuracy and overall higher scores provided by the classification report.
